@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>囧泥的Blog</title>
+  <meta name="author" content="Johnny Wu">
+  
+  <meta name="description" content="软件攻城师 &amp;&amp; 死理性派 &amp;&amp; 技术宅">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="囧泥的Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+
+  <link rel="alternate" href="/atom.xml" title="囧泥的Blog" type="application/atom+xml">
+
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config(
+    {
+      tex2jax: {inlineMath: [['$','$'], ['\(','\)']]},
+      TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+    }
+  );
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  
+</head>
+
+
+<body>
+    <div class="container">
+      <div class="left-col">
+        <div class="intrude-less">
+          <header id="header" class="inner">
+            <div class="profilepic">
+  <script src="/js/md5.js"></script>
+  <script type="text/javascript">
+    $(function(){
+	$('.profilepic').append(
+          "<img src='http://www.gravatar.com/avatar/"
+          + MD5("johnny.wjy07@gmail.com")
+          + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+    });
+  </script>
+</div><!-- profilepic -->
+<h1><a href="/">Johnny Wu</a></h1>
+<nav id="main-nav">
+  
+  <section class="subtitle">
+    <p>
+      世界并非我们眼中所见
+    </p>
+  </section>
+  
+  
+  <section class="aboutme">
+    <p>
+      软件攻城师 &amp;&amp; 死理性派 &amp;&amp; 技术宅
+    </p>
+  </section>
+  
+  <ul class="main">
+    
+      <li>
+      <a href="/">Blog</a>
+      </li>
+    
+      <li>
+      <a href="/about">About</a>
+      </li>
+    
+      <li>
+      <a href="/archives">Archives</a>
+      </li>
+    
+  </ul>
+
+</nav><!-- main-nav -->
+<nav id="sub-nav">
+  <div class="social">
+    
+      <a class="weibo" href="http://weibo.com/johnnywjy"
+         title="Weibo">Weibo</a>
+    
+    
+      <a class="github" href="http://github.com/johnnywjy"
+         title="Github">Github</a>
+    
+    
+    
+    
+    
+      <a class="dribbble" href="http://dribbble.com/johnnywjy"
+         title="Dribble">Dribbble</a>
+    
+    
+      <a class="linkedin" href="http://cn.linkedin.com/in/johnnywjy"
+         title="LinkedIn">LinkedIn</a>
+    
+    
+        <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+    
+  </div>
+</nav><!-- sub-nav -->
+
+
+          <header>
+        </div><!-- intrude-less -->
+      </div><!-- left-col -->
+      <div class="mid-col">
+        <div class="mid-col-container">
+	    <div id="content" class="inner"><div itemscope itemtype="http://schema.org/Blog">
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+	<div class="meta">
+          
+<div class="date">
+
+<time datetime="2013-10-18T14:36:58.000Z"
+      
+      data-updated="true"
+       itemprop="datePublished">
+  Oct 18 2013
+</time>
+
+
+
+
+
+</div>
+
+          
+
+
+          
+	</div>
+        <h1 class="title" itemprop="name">
+          <a href="/blog/add-support-for-weibo-dribbble-and-pixiv-to-greyshade-in-hexo/" itemprop="url">
+            为Hexo的Greyshade主题增加新浪微博，Drbbble，Pixiv的支持</a>
+        </h1>
+        <div class="entry-content" itemprop="articleBody">
+          
+            <p><a href="https://github.com/shashankmehta/greyshade" target="_blank">Greyshade</a>主题是<a href="https://github.com/shashankmehta" target="_blank">Shashank Mehta</a>开发的 Octopress 主题，被包括<a href="http://onevcat.com/" target="_blank">Onevcat</a>，<a href="http://www.imallen.com/" target="_blank">Allen</a>在内的众多开发者使用。<a href="https://github.com/nuklly" target="_blank">nuklly</a>将其迁移到了 Hexo，不过和 Octopress 原版一样不支持<s>渣浪</s>新浪微博等网站，所以本人进行了一番修改以支持这些网站。</p>
+<p>增加了 Pixiv 的 icon（自 P，颜色取自 Pixiv 的网页代码），微博和 Dribbble 的 icon 取自<a href="http://www.imallen.com/" target="_blank">Allen 的 blog</a>，<br>之前没折腾过 Hexo Theme，需要改的东西基本都是 grep+Chrome Inspect 出来的。修改了 <code>layout/_partial/header.ejs</code> 和 <code>source/css/_parts/header.styl</code> ， <code>_config.yml</code> 也需要做对应的设置。</p>
+<p>具体改动可以去 Github 看 diff，地址是<a href="https://github.com/johnnywjy/hexo-theme-greyshade" target="_blank"><a href="https://github.com/johnnywjy/hexo-theme-greyshade">https://github.com/johnnywjy/hexo-theme-greyshade</a></a></p>
+<p>弄完了就可以<code>generate &amp; deploy</code>了</p>
+<p>P.S. 还顺手增加了个原 theme 忘记加的高亮，就像<code>这样</code></p>
+<h3>References:</h3>
+<p><a href="http://www.imallen.com/blog/2013/05/12/add-support-for-weibo-and-dribbble-to-greyshade.html" target="_blank">为 Octopress 的 Greyshade 主题增加新浪微博和 Dribbble 的支持</a></p>
+
+          
+        </div>
+
+
+</article>
+
+
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+	<div class="meta">
+          
+<div class="date">
+
+<time datetime="2013-10-16T16:00:03.000Z"
+      
+      data-updated="true"
+       itemprop="datePublished">
+  Oct 17 2013
+</time>
+
+
+
+
+
+</div>
+
+          
+
+
+          
+	</div>
+        <h1 class="title" itemprop="name">
+          <a href="/blog/hello-hexo/" itemprop="url">
+            转到Hexo</a>
+        </h1>
+        <div class="entry-content" itemprop="articleBody">
+          
+            <p>好久没折腾了，看到<a href="http://weibo.com/2010406980/AdFt3qigb" target="_blank">王轲的微博</a>说 Hexo 速度快，决定折腾一下。之前折腾过<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="octopress.org">Octopress</a>, <a href="www.djangoproject.com">Django</a>（总感觉有奇怪的东西混进去了，还是动态的），不在乎多折腾一回了。</p>
+<p><a href="https://github.com/tommy351/hexo" target="_blank">Hexo</a>一句话介绍：它是由<a href="http://nodejs.org/" target="_blank">Node.js</a>驱动的一款快速、简单且功能强大的博客框架。（吐槽下 javascript 这货，大有一统天下的架势啊）</p>
+<p>目前用的<a href="https://github.com/shashankmehta/greyshade" target="_blank">Greyshade</a>主题，目前用着还不错，分享按钮按照<a href="http://www.imallen.com/" target="_blank">Allen</a>的博客改造了一下。</p>
+<p>有空写一下怎么搭建 Hexo，以及怎么在这个主题的左边加图标（P 站只是个演示，我就不放我的 P 站 id 了，反正也还没作品）以及做其他改造。</p>
+
+          
+        </div>
+
+
+</article>
+
+
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+	<div class="meta">
+          
+<div class="date">
+
+<time datetime="2013-04-30T19:55:00.000Z"
+      
+      data-updated="true"
+       itemprop="datePublished">
+  May 1 2013
+</time>
+
+
+
+
+
+</div>
+
+          
+
+
+          
+	</div>
+        <h1 class="title" itemprop="name">
+          <a href="/blog/hello-world/" itemprop="url">
+            博客终于弄好了，先来一篇Hello World吧</a>
+        </h1>
+        <div class="entry-content" itemprop="articleBody">
+          
+            <p>终于把博客“又”配置好了……撒花~</p>
+<p>这次用的 Jekyll，随手丢一个从一个数组中获得子序列最大乘积的算法，算是测试下代码高亮，复杂度 O（n）。借鉴了 Programming Pearls 里的子序列最大和算法。嗯，扫描算法。如果能看懂最大和算法的话应该不难看懂这个。</p>
+<figure class="highlight lang-python"><figcaption><span>max_product.py </span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre>
+    <span class="function"><span class="keyword">def</span> <span class="title">max_product</span><span class="params">(list)</span>:</span>
+        maxsofar = <span class="number">0</span>
+        maxendinghere = <span class="number">0</span>
+        minendinghere = <span class="number">0</span>
+        <span class="keyword">for</span> i <span class="keyword">in</span> xrange(<span class="number">0</span>, len(list)):
+            tmp = max(maxendinghere*list[i], minendinghere*list[i], list[i])
+            minendinghere = min(maxendinghere*list[i], minendinghere*list[i], list[i])
+            maxendinghere = tmp
+            maxsofar = max(maxsofar, maxendinghere)
+        <span class="keyword">return</span> maxsofar
+    <span class="comment"># 以下为测试</span>
+    test_list=[-<span class="number">2.5</span>,<span class="number">4</span>,<span class="number">0</span>,<span class="number">3</span>,<span class="number">0.5</span>,<span class="number">8</span>]
+    <span class="keyword">print</span> max_product(test_list)
+</pre></td></tr></table></figure>
+
+
+<h2>以下为吐槽</h2>
+<p>update: 已经不用 Beiyuu 的那一套模板了。现在是 GreyShade。</p>
+<p>之前用了 Octopress 的模板，虽然不难看，不过看多了挺没意思的，要不是懒得改肯定自己重写界面样式（满满的“要不是打不过你早跟你翻脸了”的感觉）</p>
+<p>后来觉得<a href="http://beiyuu.com/" target="_blank">Beiyuu</a>的博客不错，于是就 fork 了 // 虽然简单的过了点，连 rakefile 都木有，分页也没做</p>
+<p>评论系统因为本打算使用多说，不过 fork 下来自带 Disqus，加上之前折腾的时候弄了个 Disqus 的帐号，索性这么呆着去了。其实有空的话还是想试试多说的，因为多说无益嘛~（希望不要被追杀）</p>
+<p>EOF</p>
+
+          
+        </div>
+
+
+</article>
+
+
+
+
+</div>
+
+<nav id="pagenavi">
+    
+    
+    <div class="center">
+      <a href="archives">Blog Archives</a>
+    </div>
+</nav>
+</div>
+	</div>
+        <footer id="footer" class="inner">
+          Copyright © 2013 - Johnny Wu - Powered by <a href="https://github.com/tommy351/hexo">Hexo</a><br>
+- Ported theme <a href="https://github.com/nuklly/hexo-theme-greyshade">GreyShade</a> -
+        </footer>
+        
+<script src="/js/slash.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var disqus_shortname = 'johnnywjy';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+
+      </div><!-- mid-col -->
+    </div><!-- container -->
+</body>
+</html>

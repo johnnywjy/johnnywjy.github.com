@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>为Hexo的Greyshade主题增加新浪微博，Drbbble，Pixiv的支持 | 囧泥的Blog</title>
+  <meta name="author" content="Johnny Wu">
+  
+  <meta name="description" content="软件攻城师 &amp;&amp; 死理性派 &amp;&amp; 技术宅">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="为Hexo的Greyshade主题增加新浪微博，Drbbble，Pixiv的支持"/>
+  <meta property="og:site_name" content="囧泥的Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+
+  <link rel="alternate" href="/atom.xml" title="囧泥的Blog" type="application/atom+xml">
+
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config(
+    {
+      tex2jax: {inlineMath: [['$','$'], ['\(','\)']]},
+      TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+    }
+  );
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  
+</head>
+
+
+<body>
+    <div class="container">
+      <div class="left-col">
+        <div class="intrude-less">
+          <header id="header" class="inner">
+            <div class="profilepic">
+  <script src="/js/md5.js"></script>
+  <script type="text/javascript">
+    $(function(){
+	$('.profilepic').append(
+          "<img src='http://www.gravatar.com/avatar/"
+          + MD5("johnny.wjy07@gmail.com")
+          + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+    });
+  </script>
+</div><!-- profilepic -->
+<h1><a href="/">Johnny Wu</a></h1>
+<nav id="main-nav">
+  
+  <section class="subtitle">
+    <p>
+      世界并非我们眼中所见
+    </p>
+  </section>
+  
+  
+  <section class="aboutme">
+    <p>
+      软件攻城师 &amp;&amp; 死理性派 &amp;&amp; 技术宅
+    </p>
+  </section>
+  
+  <ul class="main">
+    
+      <li>
+      <a href="/">Blog</a>
+      </li>
+    
+      <li>
+      <a href="/about">About</a>
+      </li>
+    
+      <li>
+      <a href="/archives">Archives</a>
+      </li>
+    
+  </ul>
+
+</nav><!-- main-nav -->
+<nav id="sub-nav">
+  <div class="social">
+    
+      <a class="weibo" href="http://weibo.com/johnnywjy"
+         title="Weibo">Weibo</a>
+    
+    
+      <a class="github" href="http://github.com/johnnywjy"
+         title="Github">Github</a>
+    
+    
+    
+    
+    
+      <a class="dribbble" href="http://dribbble.com/johnnywjy"
+         title="Dribble">Dribbble</a>
+    
+    
+      <a class="linkedin" href="http://cn.linkedin.com/in/johnnywjy"
+         title="LinkedIn">LinkedIn</a>
+    
+    
+        <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+    
+  </div>
+</nav><!-- sub-nav -->
+
+
+          <header>
+        </div><!-- intrude-less -->
+      </div><!-- left-col -->
+      <div class="mid-col">
+        <div class="mid-col-container">
+	    <div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+	<div class="meta">
+          
+<div class="date">
+
+<time datetime="2013-10-18T14:36:58.000Z"
+      
+      data-updated="true"
+       itemprop="datePublished">
+  Oct 18 2013
+</time>
+
+
+
+
+
+</div>
+
+	</div>
+        <h1 class="title" itemprop="name">为Hexo的Greyshade主题增加新浪微博，Drbbble，Pixiv的支持</h1>
+      	<div class="entry-content" itemprop="articleBody"><p><a href="https://github.com/shashankmehta/greyshade" target="_blank">Greyshade</a>主题是<a href="https://github.com/shashankmehta" target="_blank">Shashank Mehta</a>开发的 Octopress 主题，被包括<a href="http://onevcat.com/" target="_blank">Onevcat</a>，<a href="http://www.imallen.com/" target="_blank">Allen</a>在内的众多开发者使用。<a href="https://github.com/nuklly" target="_blank">nuklly</a>将其迁移到了 Hexo，不过和 Octopress 原版一样不支持<s>渣浪</s>新浪微博等网站，所以本人进行了一番修改以支持这些网站。</p>
+<p>增加了 Pixiv 的 icon（自 P，颜色取自 Pixiv 的网页代码），微博和 Dribbble 的 icon 取自<a href="http://www.imallen.com/" target="_blank">Allen 的 blog</a>，<br>之前没折腾过 Hexo Theme，需要改的东西基本都是 grep+Chrome Inspect 出来的。修改了 <code>layout/_partial/header.ejs</code> 和 <code>source/css/_parts/header.styl</code> ， <code>_config.yml</code> 也需要做对应的设置。</p>
+<p>具体改动可以去 Github 看 diff，地址是<a href="https://github.com/johnnywjy/hexo-theme-greyshade" target="_blank"><a href="https://github.com/johnnywjy/hexo-theme-greyshade">https://github.com/johnnywjy/hexo-theme-greyshade</a></a></p>
+<p>弄完了就可以<code>generate &amp; deploy</code>了</p>
+<p>P.S. 还顺手增加了个原 theme 忘记加的高亮，就像<code>这样</code></p>
+<h3>References:</h3>
+<p><a href="http://www.imallen.com/blog/2013/05/12/add-support-for-weibo-and-dribbble-to-greyshade.html" target="_blank">为 Octopress 的 Greyshade 主题增加新浪微博和 Dribbble 的支持</a></p>
+</div>
+
+
+</article>
+
+  <div class="share">
+  <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+  
+  <a class="addthis_button_sinaweibo"></a>
+  
+  
+  <a class="addthis_button_facebook"></a>
+  
+  
+  <a class="addthis_button_twitter"></a>
+  
+  
+  <a class="addthis_button_google_plusone_share"></a>
+  
+  
+  <a class="addthis_button_compact"></a>
+  <a class="addthis_counter addthis_bubble_style"></a>  
+  </div>
+  <script type="text/javascript">
+    var addthis_config = {"data_track_addressbar":true};
+  </script>
+  <script type="text/javascript"
+          src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=null">
+  </script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</section>
+
+
+</div>
+	</div>
+        <footer id="footer" class="inner">
+          Copyright © 2013 - Johnny Wu - Powered by <a href="https://github.com/tommy351/hexo">Hexo</a><br>
+- Ported theme <a href="https://github.com/nuklly/hexo-theme-greyshade">GreyShade</a> -
+        </footer>
+        
+<script src="/js/slash.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var disqus_shortname = 'johnnywjy';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+
+      </div><!-- mid-col -->
+    </div><!-- container -->
+</body>
+</html>
