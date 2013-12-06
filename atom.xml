@@ -4,7 +4,7 @@
   <subtitle><![CDATA[世界并非我们眼中所见]]></subtitle>
   <link href="http://johnnywjy.github.io/atom.xml" rel="self"/>
   <link href="http://johnnywjy.github.io"/>
-  <updated>2013-11-07T11:50:39.567Z</updated>
+  <updated>2013-12-06T08:53:15.156Z</updated>
   <id>http://johnnywjy.github.io/</id>
   <author>
     <name><![CDATA[Johnny Wu]]></name>
@@ -12,11 +12,11 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
-    <title type="html"><![CDATA[为Hexo的Greyshade主题增加新浪微博，Drbbble，Pixiv的支持]]></title>
+    <title type="html"><![CDATA[为Hexo的Greyshade主题增加新浪微博，Dribbble，Pixiv的支持]]></title>
     <link href="http://johnnywjy.github.io/blog/add-support-for-weibo-dribbble-and-pixiv-to-greyshade-in-hexo/"/>
     <id>http://johnnywjy.github.io/blog/add-support-for-weibo-dribbble-and-pixiv-to-greyshade-in-hexo/</id>
     <published>2013-10-18T14:36:58.000Z</published>
-    <updated>2013-10-27T12:23:56.000Z</updated>
+    <updated>2013-12-06T08:50:57.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/shashankmehta/greyshade" target="_blank">Greyshade</a>主题是<a href="https://github.com/shashankmehta" target="_blank">Shashank Mehta</a>开发的 Octopress 主题，被包括<a href="http://onevcat.com/" target="_blank">Onevcat</a>，<a href="http://www.imallen.com/" target="_blank">Allen</a>在内的众多开发者使用。<a href="https://github.com/nuklly" target="_blank">nuklly</a>将其迁移到了 Hexo，不过和 Octopress 原版一样不支持<s>渣浪</s>新浪微博等网站，所以本人进行了一番修改以支持这些网站。</p>
 <p>增加了 Pixiv 的 icon（自 P，颜色取自 Pixiv 的网页代码），微博和 Dribbble 的 icon 取自<a href="http://www.imallen.com/" target="_blank">Allen 的 blog</a>，<br>之前没折腾过 Hexo Theme，需要改的东西基本都是 grep+Chrome Inspect 出来的。修改了 <code>layout/_partial/header.ejs</code> 和 <code>source/css/_parts/header.styl</code> ， <code>_config.yml</code> 也需要做对应的设置。</p>
 <p>具体改动可以去 Github 看 diff，地址是<a href="https://github.com/johnnywjy/hexo-theme-greyshade" target="_blank"><a href="https://github.com/johnnywjy/hexo-theme-greyshade">https://github.com/johnnywjy/hexo-theme-greyshade</a></a></p>
